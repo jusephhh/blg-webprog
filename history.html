@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boss Lupit Gupit - Service History</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="history.css">
+    <link rel="icon" type="image/png" href="blgcircle.png">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="dashboard.html" class="logo">
+            <img src="blgletterwhite.png" alt="logo"> BOSS LUPIT GUPIT
+        </a>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="seats.html">View Live Seats</a></li>
+                <li><a href="#" class="active">Service History</a></li>
+            </ul>
+        </nav>
+        
+        <div class="user-profile" id="userProfileContainer">
+            <span>Hi, user123</span>
+            <i class="fa-solid fa-circle-user fa-2xl" id="userIcon"></i>
+            
+            <div class="dropdown-menu" id="userDropdown">
+                <a href="login.html" class="dropdown-item">
+                    <i class="fa-solid fa-right-from-bracket"></i> Sign Out
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Service History</h1>
+
+        <div class="history-container">
+            <table class="history-table">
+                <thead>
+                    <tr>
+                        <th class="col-price">Paid Service</th>
+                        <th class="col-details">Service Details</th>
+                        <th class="col-date">Date</th>
+                    </tr>
+                </thead>
+                <tbody id="history-body">
+                    </tbody>
+            </table>
+        </div>
+
+        <div class="pagination-wrapper">
+            <button class="page-btn" id="btn-first">|◀</button>
+            <button class="page-btn" id="btn-prev">◀</button>
+            <div class="page-number" id="page-display">Page 1 / 1</div>
+            <button class="page-btn" id="btn-next">▶</button>
+            <button class="page-btn" id="btn-last">▶|</button>
+        </div>
+    </main>
+
+    <script src="history.js"></script>
+</body>
+</html>

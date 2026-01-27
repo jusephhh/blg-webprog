@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boss Lupit Gupit - Live Seats</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="seats.css">
+    <link rel="icon" type="image/png" href="blgcircle.png">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="dashboard.html" class="logo">
+            <img src="blgletterwhite.png" alt="logo"> BOSS LUPIT GUPIT
+        </a>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="#" class="active">View Live Seats</a></li>
+                <li><a href="history.html">Service History</a></li>
+            </ul>
+        </nav>
+        
+        <div class="user-profile" id="userProfileContainer">
+            <span>Hi, user123</span>
+            <i class="fa-solid fa-circle-user fa-2xl" id="userIcon"></i>
+            
+            <div class="dropdown-menu" id="userDropdown">
+                <a href="login.html" class="dropdown-item">
+                    <i class="fa-solid fa-right-from-bracket"></i> Sign Out
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>View Live Seats</h1>
+        <p class="subtitle">Check real-time availability and status of our barber chairs.</p>
+
+        <div class="seats-container">
+            <div class="seat-card">
+                <div class="seat-box available" onclick="selectSeat(1)">
+                    <div class="seat-color"></div>
+                    <span class="seat-status-icon"><i class="fa-regular fa-circle-check"></i></span>
+                </div>
+                <h3>Seat 1</h3>
+                <p class="status-text text-green">Available</p>
+                <p class="desc">Ready for Reservation</p>
+                <button class="btn-action" onclick="selectSeat(1)">Reserve</button>
+            </div>
+
+            <div class="seat-card">
+                <div class="seat-box reserved-user">
+                    <div class="seat-color"></div>
+                    <span class="seat-status-icon"><i class="fa-solid fa-user-check"></i></span>
+                </div>
+                <h3>Seat 2</h3>
+                <p class="status-text text-blue">Reserved By You</p>
+                <p class="desc warning"><small>Grace period active. If missed, seat will open for walk-ins.</small></p>
+                <button class="btn-action btn-secondary">View Details</button>
+            </div>
+
+            <div class="seat-card">
+                <div class="seat-box occupied">
+                    <div class="seat-color"></div>
+                    <span class="seat-status-icon"><i class="fa-solid fa-ban"></i></span>
+                </div>
+                <h3>Seat 3</h3>
+                <p class="status-text text-red">Occupied</p>
+                <p class="desc">Currently in Service</p>
+                <button class="btn-action" disabled style="opacity: 0.5; cursor: not-allowed;">Unavailable</button>
+            </div>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item"><div class="dot green"></div> Available</div>
+            <div class="legend-item"><div class="dot blue"></div> Your Reservation</div>
+            <div class="legend-item"><div class="dot red"></div> Occupied</div>
+        </div>
+
+    </main>
+
+    <script src="seats.js"></script>
+</body>
+</html>
