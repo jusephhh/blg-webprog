@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boss Lupit Gupit - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" type="image/png" href="blgcircle.png">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="dashboard.html" class="logo">
+            <img src="blgletterwhite.png" alt="logo"> BOSS LUPIT GUPIT
+        </a>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html" class="active">Home</a></li>
+                <li><a href="seats.html">View Live Seats</a></li>
+                <li><a href="history.html">Service History</a></li>
+            </ul>
+        </nav>
+        
+        <div class="user-profile" id="userProfileContainer">
+            <span>Hi, user123</span>
+            <i class="fa-solid fa-circle-user fa-2xl" id="userIcon"></i>
+            
+            <div class="dropdown-menu" id="userDropdown">
+                <a href="profile.html" class="dropdown-item">
+                    <i class="fa-solid fa-user"></i> Profile
+                </a>
+                <a href="login.html" class="dropdown-item">
+                    <i class="fa-solid fa-right-from-bracket"></i> Sign Out
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>SELF-CARE IS THE NEW GOLD</h1>
+            <button class="btn-reserve" onclick="window.location.href='reservations.html'">Register Now!</button>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="dashboard-row">
+            <div class="col-left">
+                <div class="section-header">Your Upcoming Reservations</div>
+                <div class="card reservation-card">
+                    <div class="card-top">
+                        <span class="title-text">Haircut & Shave</span>
+                        <span class="time-left">6 hrs left</span>
+                    </div>
+                    <div class="description-text">Appointment with Barber John</div>
+                </div>
+            </div>
+
+            <div class="col-right">
+                <div class="section-header align-right">Announcements</div>
+                <div class="card announcement-card">
+                    <i class="fa-solid fa-bullhorn bullhorn-icon"></i>
+                    The shop will only be open until 5:00 P.M. today.
+                </div>
+            </div>
+        </div>
+
+        <div class="icon-grid">
+            <div class="icon-card">
+                <div class="icon-box">
+                    <img src="light.png" alt="Shop">
+                </div>
+                <div class="icon-label">The Shop</div>
+            </div>
+            
+            <div class="icon-card">
+                <div class="icon-box">
+                    <img src="barber.png" alt="Crew">
+                </div>
+                <div class="icon-label">The Crew</div>
+            </div>
+            
+            <div class="icon-card">
+                <div class="icon-box">
+                    <img src="scissorcomb.png" alt="Services">
+                </div>
+                <div class="icon-label">Our Services</div>
+            </div>
+            
+            <div class="icon-card">
+                <div class="icon-box">
+                    <img src="hair.png" alt="Haircuts">
+                </div>
+                <div class="icon-label">Recommended Haircuts</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
