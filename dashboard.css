@@ -256,6 +256,10 @@ body {
     background-color: #fff9f0;
     border-color: #f0e0d0;
 }
+.bullhorn-icon {
+    margin-right: 10px;
+    color: #8b5a2b;
+}
 
 .icon-grid {
     display: grid;

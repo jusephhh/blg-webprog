@@ -223,6 +223,11 @@ h3 { margin: 10px 0 5px; font-size: 1.4rem; color: #333; }
 .btn-action:hover { background-color: #5d3a00; }
 .btn-secondary { background-color: #7f8c8d; }
 .btn-secondary:hover { background-color: #555; }
+.btn-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 
 .legend {
     display: flex;

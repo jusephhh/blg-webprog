@@ -17,18 +17,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- 2. Icon Navigation Logic ---
     const iconBoxes = document.querySelectorAll('.icon-box');
+    
     iconBoxes.forEach(box => {
         box.addEventListener('click', () => {
-            const label = box.nextElementSibling.innerText;
-            alert(`Navigating to: ${label} (Feature coming soon!)`);
+            const label = box.nextElementSibling.innerText.trim();
+
+            if (label === 'The Shop') {
+                window.location.href = 'the_shop.html';
+            } 
+            else if (label === 'The Crew') {
+                window.location.href = 'crew.html';
+            }
+            else if (label === 'Our Services') {
+                window.location.href = 'services.html';
+            }
+            else if (label === 'Recommended Haircuts') {
+                window.location.href = 'haircuts.html';
+            }
         });
     });
 
+    // --- 3. Reservation Button Logic (THE FIX) ---
     const reserveBtn = document.querySelector('.btn-reserve');
     if (reserveBtn) {
-        reserveBtn.addEventListener('click', () => {
-            console.log("Reservation modal triggered");
+        reserveBtn.addEventListener('click', (e) => {
+            e.preventDefault(); // Stop any other default actions
+            // Redirect explicitly to reservations.html
+            window.location.href = 'reservations.html'; 
         });
     }
 });

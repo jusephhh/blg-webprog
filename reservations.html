@@ -38,7 +38,7 @@
 
     <main>
         <div class="intro">
-            <a href="dashboard.html" style="text-decoration: none; color: inherit; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 15px; font-weight: 600;">
+            <a href="dashboard.html" style="text-decoration: none; color: inherit; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 15px; font-weight: 600; font-size: large;">
                 <i class="fa-solid fa-arrow-left"></i> Back
             </a>
             <h1>Your Reservations</h1>
@@ -136,15 +136,24 @@
                 <input type="datetime-local" id="resDateTime">
             </div>
             <div class="form-group">
-                <label>Seat Number</label>
+                <label>How many Customers</label>
                 <select id="resSeat" style="background-color: #fff;">
-                    <option value="" disabled selected>Select a Seat</option>
-                    <option value="1">Seat 1</option>
-                    <option value="2">Seat 2</option>
-                    <option value="3">Seat 3</option>
+                    <option value="" disabled selected>Choose how many</option>
+                    <option value="1">I'm the only customer</option>
+                    <option value="2">I have someone with me</option>
+                    <option value="3">I have two person with me</option>
                 </select>
             </div>
-            <p style="font-size: 0.8rem; color: #666; margin-bottom: 15px; text-align: center;">Strictly arrive within five minutes of past reserved time to avoid automatic cancellation</p>
+            <div class="form-group">
+                <label>Choose your Barber</label>
+                <select id="resSeat" style="background-color: #fff;">
+                    <option value="" disabled selected>Select your Barber</option>
+                    <option value="1">Mr. Richard</option>
+                    <option value="2">Mr. Noel</option>
+                    <option value="3">Mr. Rudy</option>
+                </select>
+            </div>
+            <p style="font-size: 0.8rem; color: #666; margin-bottom: 15px; text-align: center;">Strictly arrive within five minutes of past reserved time to avoid automatic cancellation.</p>
             <button class="btn-action" id="reserveNowBtn">Reserve Now</button>
         </div>
     </div>
