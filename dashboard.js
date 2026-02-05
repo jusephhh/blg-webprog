@@ -36,6 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
             else if (label === 'Recommended Haircuts') {
                 window.location.href = 'haircuts.html';
             }
+            else if (label === 'Our Schedule') {
+                window.location.href = 'shop-schedule.html';
+            }
         });
     });
 

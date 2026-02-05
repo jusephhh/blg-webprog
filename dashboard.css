@@ -273,6 +273,7 @@ body {
     text-align: center;
 }
 
+
 .icon-box {
     border: 1px solid #ddd;
     border-radius: 15px;
@@ -291,6 +292,7 @@ body {
     height: auto;
     opacity: 0.9;
     transition: transform 0.3s;
+    color: #8b5a2b;
 }
 
 .icon-box:hover {
